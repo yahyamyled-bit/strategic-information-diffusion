@@ -1,0 +1,156 @@
+{
+  "experiment": "early_detection_eta_sweep",
+  "purpose": "Disentangle preemptive-flagging backfire from residual-transmission backfire.",
+  "n_runs": 50,
+  "k_target": 500,
+  "targeting": "degree",
+  "operating_point": {
+    "alpha": 0.3,
+    "beta": 0.8,
+    "gamma": 0.36
+  },
+  "eta_default": 0.1,
+  "seed_regime": "random",
+  "t_detect": 10,
+  "f_state": "absorbing",
+  "master_seed": 20260612,
+  "sanity_reference_ce_eta050": -65.49496497648549,
+  "sanity_reference_baseline_mean": 71509.1,
+  "sanity_observed_ce_eta050_vs_main_baseline": -65.49496497648549,
+  "sanity_pp_diff": 0.0,
+  "baseline_spread_mean": 71509.1,
+  "baseline_spread_summary": {
+    "mean": 71509.1,
+    "std": 2692.8716047357025,
+    "median": 71247.0,
+    "min": 65852.0,
+    "max": 77662.0,
+    "ci95_low": 70777.943,
+    "ci95_high": 72256.3965
+  },
+  "early_detection_by_eta": {
+    "0.00": {
+      "eta_target": 0.0,
+      "spread_size_summary": {
+        "mean": 70445.84,
+        "std": 3249.825102735122,
+        "median": 70491.5,
+        "min": 62786.0,
+        "max": 78552.0,
+        "ci95_low": 69570.86899999999,
+        "ci95_high": 71345.56599999999
+      },
+      "containment_efficiency_summary": {
+        "mean": 1.4868876828263893,
+        "std": 4.544631526246481,
+        "median": 1.4230356695861168,
+        "min": -9.848956286682386,
+        "max": 12.19858731266371,
+        "ci95_low": 0.22868977514750694,
+        "ci95_high": 2.7104676188065646
+      }
+    },
+    "0.10": {
+      "eta_target": 0.1,
+      "spread_size_summary": {
+        "mean": 82418.6,
+        "std": 2338.5437296553177,
+        "median": 82145.5,
+        "min": 77693.0,
+        "max": 88473.0,
+        "ci95_low": 81794.0975,
+        "ci95_high": 83068.7835
+      },
+      "containment_efficiency_summary": {
+        "mean": -15.256100272552715,
+        "std": 3.270274314255553,
+        "median": -14.874190837250074,
+        "min": -23.72271501109648,
+        "max": -8.647710571102131,
+        "ci95_low": -16.16533210458528,
+        "ci95_high": -14.382781352303406
+      }
+    },
+    "0.25": {
+      "eta_target": 0.25,
+      "spread_size_summary": {
+        "mean": 93108.8,
+        "std": 1869.117220420771,
+        "median": 92711.0,
+        "min": 89854.0,
+        "max": 97577.0,
+        "ci95_low": 92607.513,
+        "ci95_high": 93633.0475
+      },
+      "containment_efficiency_summary": {
+        "mean": -30.205526289661023,
+        "std": 2.613817290975234,
+        "median": -29.649233454203724,
+        "min": -36.45396180346276,
+        "max": -25.653937750579985,
+        "ci95_low": -30.938646270194965,
+        "ci95_high": -29.504514810003187
+      }
+    },
+    "0.50": {
+      "eta_target": 0.5,
+      "spread_size_summary": {
+        "mean": 118343.96,
+        "std": 1628.65980913067,
+        "median": 118036.5,
+        "min": 114540.0,
+        "max": 122473.0,
+        "ci95_low": 117899.278,
+        "ci95_high": 118787.5325
+      },
+      "containment_efficiency_summary": {
+        "mean": -65.49496497648549,
+        "std": 2.2775560161303523,
+        "median": -65.06500571255965,
+        "min": -71.26911120402856,
+        "max": -60.175418233483555,
+        "ci95_low": -66.11526714781755,
+        "ci95_high": -64.8731112543718
+      }
+    }
+  },
+  "node_removal": {
+    "spread_size_summary": {
+      "mean": 50283.7,
+      "std": 638.6930293296505,
+      "median": 50366.5,
+      "min": 48685.0,
+      "max": 51549.0,
+      "ci95_low": 50108.54,
+      "ci95_high": 50456.6425
+    },
+    "containment_efficiency_summary": {
+      "mean": 29.68209640451356,
+      "std": 0.8931632887697517,
+      "median": 29.566306945549595,
+      "min": 27.912671254427764,
+      "max": 31.917755921973573,
+      "ci95_low": 29.440249562643086,
+      "ci95_high": 29.9270442503122
+    }
+  },
+  "part_b_diagnostic": {
+    "t_detect": 10,
+    "k_targets": 500,
+    "target_state_at_t10": {
+      "S": 429,
+      "I": 33,
+      "R": 38,
+      "F": 0
+    },
+    "of_still_S_at_t10": {
+      "count": 429,
+      "ever_infected_over_full_baseline": 0,
+      "never_infected_truly_silent": 429,
+      "ever_infected_pct": 0.0
+    },
+    "baseline_spread_size_this_run": 71593,
+    "baseline_duration_this_run": 120
+  },
+  "wall_seconds": 7606.2
+}

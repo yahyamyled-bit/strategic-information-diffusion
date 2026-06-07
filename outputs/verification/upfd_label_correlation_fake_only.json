@@ -1,0 +1,43 @@
+{
+  "task": "Task 1 -- UPFD PolitiFact: rho(s, centrality)",
+  "timestamp_utc": "2026-05-26T19:10:31.346589Z",
+  "script": "src/verify_task1_upfd_correlation.py",
+  "command": "src/verify_task1_upfd_correlation.py",
+  "git_sha": "53a5e0a8ea1f23d5222a71f3d95144ed8604b37c",
+  "dataset": {
+    "corpus": "politifact",
+    "feature": "profile",
+    "root": "data/upfd",
+    "fake_only": true,
+    "splits_used": [
+      "train",
+      "val",
+      "test"
+    ]
+  },
+  "tree_counts_per_split": {
+    "train": 26,
+    "val": 18,
+    "test": 113
+  },
+  "tree_count_total": 157,
+  "trees_skipped_num_nodes_lt_2": 0,
+  "pooled_node_count": 23012,
+  "pooled_zero_label_count": 19267,
+  "pooled_fraction_leaves_s_eq_0": 0.8372588214844429,
+  "s_mean": 0.010651575558966604,
+  "s_std": 0.08630038390386169,
+  "spearman": {
+    "s_vs_degree": 0.996294,
+    "s_vs_betweenness": 0.999156,
+    "s_vs_eigenvector": 0.045456,
+    "s_vs_neighbor_degree_avg": -0.291369
+  },
+  "spearman_4dp": {
+    "s_vs_degree": 0.9963,
+    "s_vs_betweenness": 0.9992,
+    "s_vs_eigenvector": 0.0455,
+    "s_vs_neighbor_degree_avg": -0.2914
+  },
+  "wall_seconds": 9.85
+}

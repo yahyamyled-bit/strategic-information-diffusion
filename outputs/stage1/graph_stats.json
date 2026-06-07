@@ -1,0 +1,23 @@
+{
+  "n_nodes": 456626,
+  "n_directed_edges_raw": 14855842,
+  "n_undirected_edges_unique": 12508413,
+  "expected_nodes": 456626,
+  "expected_directed_edges": 14855842,
+  "nodes_match": true,
+  "directed_edges_match": true,
+  "degree_min": 1,
+  "degree_max": 51386,
+  "degree_mean": 54.78624957842961,
+  "degree_median": 18.0,
+  "n_isolated_nodes": 0,
+  "influence_min": 0.0,
+  "influence_max": 1.0,
+  "influence_mean": 0.2657573699213807,
+  "id_min": 1,
+  "id_max": 456626,
+  "ids_contiguous": true,
+  "build_seconds": 17.0,
+  "networkx_nodes": 456626,
+  "networkx_edges": 12508413
+}

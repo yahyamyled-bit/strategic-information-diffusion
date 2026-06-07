@@ -1,0 +1,21 @@
+{
+  "purpose": "Provisional selection of utility weights (alpha, beta, gamma) for the Stage 2 proof-of-concept baseline. These are PLACEHOLDERS; Stage 3 calibrates alpha/beta/gamma from the IO Archive. Selection criterion (from the handoff): a non-degenerate, sub-saturating cascade with run-to-run variation, leaving headroom for Stage 6 interventions.",
+  "graph": "Higgs follower (456,626 nodes, 12,508,413 undirected edges)",
+  "fixed": {"attention": 1.0, "credibility_risk": 1.0, "rho": 0.10, "theta": "Beta(2,5)", "k_seeds": 10, "t_max": 200},
+  "finding": "Unit weights (1,1,1) are supercritical: ~60% infected, 90% reached in 4 steps, because the alpha*c_v*attention term gives high-credulity nodes a large exposure-independent utility so they share on first contact. beta (peer-influence weight) is the dominant lever on final size.",
+  "sweep_3_runs_each": [
+    {"alpha": 1.0,  "beta": 1.0,  "gamma": 1.0,  "spread_frac": 0.605, "peak": 226960, "peak_step": 4.0},
+    {"alpha": 0.5,  "beta": 1.0,  "gamma": 0.5,  "spread_frac": 0.846, "peak": 292797, "peak_step": 6.0},
+    {"alpha": 0.3,  "beta": 1.0,  "gamma": 0.3,  "spread_frac": 0.961, "peak": 337030, "peak_step": 7.7},
+    {"alpha": 0.3,  "beta": 0.6,  "gamma": 0.3,  "spread_frac": 0.260, "peak": 92601,  "peak_step": 6.0},
+    {"alpha": 0.2,  "beta": 0.5,  "gamma": 0.3,  "spread_frac": 0.065, "peak": 23301,  "peak_step": 6.0},
+    {"alpha": 0.15, "beta": 0.5,  "gamma": 0.25, "spread_frac": 0.031, "peak": 11069,  "peak_step": 6.0}
+  ],
+  "variance_check_10_runs_each": [
+    {"alpha": 0.3,  "beta": 0.6,  "gamma": 0.3,  "spread_mean": 122670, "spread_std": 8707, "spread_frac": 0.269, "cv": 0.07},
+    {"alpha": 0.25, "beta": 0.55, "gamma": 0.3,  "spread_mean": 64983,  "spread_std": 4271, "spread_frac": 0.142, "cv": 0.07},
+    {"alpha": 0.2,  "beta": 0.5,  "gamma": 0.3,  "spread_mean": 30451,  "spread_std": 2552, "spread_frac": 0.067, "cv": 0.08}
+  ],
+  "selected": {"alpha": 0.25, "beta": 0.55, "gamma": 0.30},
+  "rationale": "~14% spread (~65K nodes) matches the order of magnitude of real misinformation reach (Vosoughi et al. report false news reaching up to ~100K), peaks around step 6, terminates well before T_max=200, shows run-to-run variation (std ~4,271), and leaves substantial headroom for interventions. Final values are subject to replacement by Stage 3 calibration."
+}

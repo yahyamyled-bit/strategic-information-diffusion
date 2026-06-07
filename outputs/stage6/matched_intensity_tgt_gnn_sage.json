@@ -1,0 +1,395 @@
+{
+  "n_runs": 50,
+  "k_target": 500,
+  "targeting": "gnn_sage",
+  "operating_point": {
+    "alpha": 0.3,
+    "beta": 0.8,
+    "gamma": 0.36
+  },
+  "eta_default": 0.1,
+  "f_duration": null,
+  "seed_regime": "random",
+  "suffix": "_tgt_gnn_sage",
+  "baseline_spread_mean": 71509.1,
+  "affected_first_step": {
+    "node_removal": 500,
+    "visibility_reduction": 500,
+    "fact_checking": 281180,
+    "edge_rewiring": 78065,
+    "early_detection": 500
+  },
+  "dependent_variables": {
+    "baseline": {
+      "spread_size": {
+        "mean": 71509.1,
+        "std": 2692.8716047357025,
+        "median": 71247.0,
+        "min": 65852.0,
+        "max": 77662.0,
+        "ci95_low": 70777.943,
+        "ci95_high": 72256.3965
+      },
+      "spread_speed": {
+        "mean": 4.88,
+        "std": 0.328260722659316,
+        "median": 5.0,
+        "min": 4.0,
+        "max": 5.0,
+        "ci95_low": 4.78,
+        "ci95_high": 4.96
+      },
+      "peak_infection": {
+        "mean": 58711.96,
+        "std": 2507.6757509368576,
+        "median": 58555.0,
+        "min": 53867.0,
+        "max": 63978.0,
+        "ci95_low": 58023.294499999996,
+        "ci95_high": 59394.658500000005
+      },
+      "duration": {
+        "mean": 115.5,
+        "std": 15.317390410236067,
+        "median": 112.0,
+        "min": 92.0,
+        "max": 160.0,
+        "ci95_low": 111.5,
+        "ci95_high": 119.86
+      }
+    },
+    "node_removal": {
+      "spread_size": {
+        "mean": 63063.02,
+        "std": 1684.6473922831835,
+        "median": 62944.5,
+        "min": 59652.0,
+        "max": 67053.0,
+        "ci95_low": 62605.703,
+        "ci95_high": 63535.1785
+      },
+      "spread_speed": {
+        "mean": 5.0,
+        "std": 0.0,
+        "median": 5.0,
+        "min": 5.0,
+        "max": 5.0,
+        "ci95_low": 5.0,
+        "ci95_high": 5.0
+      },
+      "peak_infection": {
+        "mean": 51808.44,
+        "std": 1426.908176900715,
+        "median": 51805.0,
+        "min": 49212.0,
+        "max": 54743.0,
+        "ci95_low": 51421.6685,
+        "ci95_high": 52205.1725
+      },
+      "duration": {
+        "mean": 113.04,
+        "std": 10.522977773638495,
+        "median": 113.0,
+        "min": 95.0,
+        "max": 137.0,
+        "ci95_low": 110.18,
+        "ci95_high": 115.92
+      }
+    },
+    "visibility_reduction": {
+      "spread_size": {
+        "mean": 68793.24,
+        "std": 2183.9242582366005,
+        "median": 69358.5,
+        "min": 64374.0,
+        "max": 73457.0,
+        "ci95_low": 68201.9325,
+        "ci95_high": 69388.45
+      },
+      "spread_speed": {
+        "mean": 4.92,
+        "std": 0.27404751561786966,
+        "median": 5.0,
+        "min": 4.0,
+        "max": 5.0,
+        "ci95_low": 4.84,
+        "ci95_high": 4.98
+      },
+      "peak_infection": {
+        "mean": 56521.96,
+        "std": 1898.800802654998,
+        "median": 56778.0,
+        "min": 52536.0,
+        "max": 59892.0,
+        "ci95_low": 56002.773,
+        "ci95_high": 57031.8405
+      },
+      "duration": {
+        "mean": 120.9,
+        "std": 14.234551239136128,
+        "median": 119.5,
+        "min": 93.0,
+        "max": 158.0,
+        "ci95_low": 117.14,
+        "ci95_high": 124.96
+      }
+    },
+    "fact_checking": {
+      "spread_size": {
+        "mean": 65355.3,
+        "std": 1626.6150435797647,
+        "median": 65193.0,
+        "min": 62228.0,
+        "max": 69425.0,
+        "ci95_low": 64916.9015,
+        "ci95_high": 65804.25949999999
+      },
+      "spread_speed": {
+        "mean": 4.88,
+        "std": 0.328260722659316,
+        "median": 5.0,
+        "min": 4.0,
+        "max": 5.0,
+        "ci95_low": 4.78,
+        "ci95_high": 4.96
+      },
+      "peak_infection": {
+        "mean": 53666.28,
+        "std": 1310.7462127680226,
+        "median": 53577.5,
+        "min": 51270.0,
+        "max": 56607.0,
+        "ci95_low": 53311.777,
+        "ci95_high": 54022.800500000005
+      },
+      "duration": {
+        "mean": 116.52,
+        "std": 14.333121339992163,
+        "median": 115.5,
+        "min": 92.0,
+        "max": 174.0,
+        "ci95_low": 112.76,
+        "ci95_high": 120.48
+      }
+    },
+    "edge_rewiring": {
+      "spread_size": {
+        "mean": 65623.84,
+        "std": 1829.8218867263713,
+        "median": 65613.5,
+        "min": 61285.0,
+        "max": 69818.0,
+        "ci95_low": 65115.4995,
+        "ci95_high": 66118.902
+      },
+      "spread_speed": {
+        "mean": 4.92,
+        "std": 0.27404751561786966,
+        "median": 5.0,
+        "min": 4.0,
+        "max": 5.0,
+        "ci95_low": 4.84,
+        "ci95_high": 4.98
+      },
+      "peak_infection": {
+        "mean": 53948.46,
+        "std": 1537.278037205199,
+        "median": 53897.0,
+        "min": 50563.0,
+        "max": 57571.0,
+        "ci95_low": 53532.0745,
+        "ci95_high": 54366.491500000004
+      },
+      "duration": {
+        "mean": 115.06,
+        "std": 11.723707012820176,
+        "median": 113.5,
+        "min": 94.0,
+        "max": 152.0,
+        "ci95_low": 111.84,
+        "ci95_high": 118.22
+      }
+    },
+    "early_detection": {
+      "spread_size": {
+        "mean": 88968.3,
+        "std": 1976.4943119842574,
+        "median": 88654.0,
+        "min": 85967.0,
+        "max": 94224.0,
+        "ci95_low": 88438.618,
+        "ci95_high": 89532.0855
+      },
+      "spread_speed": {
+        "mean": 11.0,
+        "std": 0.0,
+        "median": 11.0,
+        "min": 11.0,
+        "max": 11.0,
+        "ci95_low": 11.0,
+        "ci95_high": 11.0
+      },
+      "peak_infection": {
+        "mean": 57945.36,
+        "std": 2646.771647397899,
+        "median": 58110.5,
+        "min": 51443.0,
+        "max": 64933.0,
+        "ci95_low": 57231.4245,
+        "ci95_high": 58678.1415
+      },
+      "duration": {
+        "mean": 117.1,
+        "std": 11.05321081802727,
+        "median": 116.0,
+        "min": 101.0,
+        "max": 158.0,
+        "ci95_low": 114.2,
+        "ci95_high": 120.1805
+      }
+    }
+  },
+  "containment_efficiency": {
+    "baseline": {
+      "mean": 8.189005029635155e-15,
+      "std": 3.765774712219427,
+      "median": 0.36652677771081693,
+      "min": -8.604359445161517,
+      "max": 7.911021114795187,
+      "ci95_low": -1.0450369253703293,
+      "ci95_high": 1.0224670706245853
+    },
+    "node_removal": {
+      "mean": 11.81119605756471,
+      "std": 2.355850363496651,
+      "median": 11.9769372009996,
+      "min": 6.231514590450733,
+      "max": 16.581246302918096,
+      "ci95_low": 11.150918554421752,
+      "ci95_high": 12.45071885955774
+    },
+    "visibility_reduction": {
+      "mean": 3.797922222486377,
+      "std": 3.054050824631551,
+      "median": 3.007449401544706,
+      "min": -2.7239889748297683,
+      "max": 9.977890925770295,
+      "ci95_low": 2.9655666201924036,
+      "ci95_high": 4.6248204773937935
+    },
+    "fact_checking": {
+      "mean": 8.605618026237227,
+      "std": 2.274696568100794,
+      "median": 8.832582146887606,
+      "min": 2.9144542442850008,
+      "max": 12.978907579594773,
+      "ci95_low": 7.977782547955444,
+      "ci95_high": 9.218684754807436
+    },
+    "edge_rewiring": {
+      "mean": 8.23008540171811,
+      "std": 2.5588657761408986,
+      "median": 8.244545099854431,
+      "min": 2.3648738412314034,
+      "max": 14.297620862239919,
+      "ci95_low": 7.537779107833836,
+      "ci95_high": 8.940960660950852
+    },
+    "early_detection": {
+      "mean": -24.415354129754107,
+      "std": 2.763975930314124,
+      "median": -23.975829649652972,
+      "min": -31.7650480847892,
+      "max": -20.218265926993897,
+      "ci95_low": -25.203764975366763,
+      "ci95_high": -23.674634417158085
+    }
+  },
+  "anova": {
+    "F": 1091.803159809776,
+    "p": 1.7431260152249173e-187
+  },
+  "kruskal_wallis": {
+    "H": 244.70457376942431,
+    "p": 7.519210463316137e-51
+  },
+  "pairwise_ttests_bonferroni_alpha": 0.0033333333333333335,
+  "pairwise_ttests": {
+    "baseline__vs__node_removal": {
+      "t": -18.801969361413708,
+      "p": 1.6076542683015204e-31,
+      "significant_bonferroni": true
+    },
+    "baseline__vs__visibility_reduction": {
+      "t": -5.5388625677670875,
+      "p": 2.757804088379774e-07,
+      "significant_bonferroni": true
+    },
+    "baseline__vs__fact_checking": {
+      "t": -13.831429673245463,
+      "p": 5.554016343743747e-23,
+      "significant_bonferroni": true
+    },
+    "baseline__vs__edge_rewiring": {
+      "t": -12.782085126975288,
+      "p": 1.3002887213662102e-21,
+      "significant_bonferroni": true
+    },
+    "baseline__vs__early_detection": {
+      "t": 36.95851098805851,
+      "p": 3.7103889346243787e-56,
+      "significant_bonferroni": true
+    },
+    "node_removal__vs__visibility_reduction": {
+      "t": 14.690397524052564,
+      "p": 7.246048453194479e-26,
+      "significant_bonferroni": true
+    },
+    "node_removal__vs__fact_checking": {
+      "t": 6.921613996124528,
+      "p": 4.683540527060619e-10,
+      "significant_bonferroni": true
+    },
+    "node_removal__vs__edge_rewiring": {
+      "t": 7.280296956265342,
+      "p": 8.648761246439142e-11,
+      "significant_bonferroni": true
+    },
+    "node_removal__vs__early_detection": {
+      "t": 70.53363549269635,
+      "p": 3.0080435592163224e-84,
+      "significant_bonferroni": true
+    },
+    "visibility_reduction__vs__fact_checking": {
+      "t": -8.927214193284334,
+      "p": 4.648994915199643e-14,
+      "significant_bonferroni": true
+    },
+    "visibility_reduction__vs__edge_rewiring": {
+      "t": -7.865812617124327,
+      "p": 5.739458864421696e-12,
+      "significant_bonferroni": true
+    },
+    "visibility_reduction__vs__early_detection": {
+      "t": 48.4327011262528,
+      "p": 8.766827978275072e-70,
+      "significant_bonferroni": true
+    },
+    "fact_checking__vs__edge_rewiring": {
+      "t": 0.775588037878181,
+      "p": 0.4398854618823166,
+      "significant_bonferroni": false
+    },
+    "fact_checking__vs__early_detection": {
+      "t": 65.22825507309639,
+      "p": 2.191522765866321e-80,
+      "significant_bonferroni": true
+    },
+    "edge_rewiring__vs__early_detection": {
+      "t": 61.28536454677422,
+      "p": 1.2917668508069552e-79,
+      "significant_bonferroni": true
+    }
+  },
+  "wall_seconds": 20804.3
+}

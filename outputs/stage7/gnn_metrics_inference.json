@@ -1,0 +1,52 @@
+{
+  "label": "s_higgs (realized-diffusion cascade contribution)",
+  "n_nodes": 456626,
+  "split": {
+    "train": 319638,
+    "val": 68493,
+    "test": 68495
+  },
+  "y_test_var": 5.249600866661786e-06,
+  "models": {
+    "GCN": {
+      "val_mse": 6.92471512593329e-05,
+      "test_mse": 5.0928431038995184e-06,
+      "r2": 0.0298608916646933,
+      "test_spearman": 0.19599387624108616,
+      "precision_at_500": 0.286,
+      "train_seconds": 4413.2
+    },
+    "GraphSAGE": {
+      "val_mse": 0.00020231296366546303,
+      "test_mse": 0.00014236688432905958,
+      "r2": -26.119563552569755,
+      "test_spearman": 0.10800515801084232,
+      "precision_at_500": 0.004,
+      "train_seconds": 1691.4
+    },
+    "GAT": {
+      "val_mse": 6.98224175721407e-05,
+      "test_mse": 5.3024241122961715e-06,
+      "r2": -0.010062335590091287,
+      "test_spearman": 0.10034587555255835,
+      "precision_at_500": 0.012,
+      "train_seconds": 9531.4
+    },
+    "MLP": {
+      "val_mse": 6.942304025869817e-05,
+      "test_mse": 5.478431698194144e-06,
+      "r2": -0.043590139011439044,
+      "test_spearman": 0.11658682347070097,
+      "precision_at_500": 0.096,
+      "train_seconds": 11.3
+    }
+  },
+  "baselines_test_spearman": {
+    "degree": 0.3334669086396397,
+    "pagerank": 0.35680109408066873
+  },
+  "baselines_precision_at_500": {
+    "degree": 0.298,
+    "pagerank": 0.31
+  }
+}

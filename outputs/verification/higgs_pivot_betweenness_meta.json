@@ -1,0 +1,26 @@
+{
+  "task": "Task 2 -- Higgs pivot-sampled betweenness wall-clock",
+  "timestamp_utc": "2026-05-28T00:18:37.075866Z",
+  "script": "src/verify_task2_higgs_pivot_betweenness.py",
+  "command": "src/verify_task2_higgs_pivot_betweenness.py",
+  "git_sha": "0fce3302569f3c2f6453a465480c6db131a924ef",
+  "adjacency_path": "data/processed/higgs_adjacency.npz",
+  "n_nodes": 456626,
+  "n_edges_undirected": 12508413,
+  "pivot_sample_size": 1000,
+  "pivot_seed": 20260612,
+  "cutoff": null,
+  "wall_seconds_betweenness_call": 667.1611,
+  "wall_seconds_total_script": 673.5193,
+  "btw_stats": {
+    "len": 456626,
+    "min": 0.0,
+    "max": 14704471.573282,
+    "mean": 1092.2268234835508,
+    "std": 50514.43562017662,
+    "nonzero_count": 423912,
+    "nonzero_fraction": 0.9283571237730659
+  },
+  "spearman_rho_btw_pivot_vs_degree": 0.7920397502968982,
+  "npz_path": "outputs/verification/higgs_betweenness_pivot1000.npz"
+}

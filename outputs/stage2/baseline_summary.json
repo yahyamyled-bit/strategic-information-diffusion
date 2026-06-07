@@ -1,0 +1,68 @@
+{
+  "n_runs": 50,
+  "seed_regime": 0,
+  "n_nodes": 456626,
+  "params": {
+    "alpha": 0.25,
+    "beta": 1.0,
+    "gamma": 0.3,
+    "rho": 0.1,
+    "t_max": 200,
+    "k_seeds": 10,
+    "theta_beta": [
+      2,
+      5
+    ],
+    "note": "alpha/beta/gamma are PROVISIONAL (Stage 3 calibrates)"
+  },
+  "spread_size": {
+    "mean": 63953.38,
+    "std": 3730.8930095315554,
+    "min": 54627,
+    "max": 72250,
+    "median": 64179.5,
+    "ci95_low": 62935.4475,
+    "ci95_high": 64983.9225
+  },
+  "spread_speed": {
+    "mean": 5.08,
+    "std": 0.27404751561786966,
+    "min": 5,
+    "max": 6,
+    "median": 5.0,
+    "ci95_low": 5.02,
+    "ci95_high": 5.16
+  },
+  "peak_infection": {
+    "mean": 51543.58,
+    "std": 3136.5097207187587,
+    "min": 43961,
+    "max": 58033,
+    "median": 51404.0,
+    "ci95_low": 50676.1945,
+    "ci95_high": 52403.2615
+  },
+  "duration": {
+    "mean": 113.58,
+    "std": 10.715409464878139,
+    "min": 96,
+    "max": 153,
+    "median": 110.0,
+    "ci95_low": 110.78,
+    "ci95_high": 116.66049999999998
+  },
+  "spread_size_fraction_mean": 0.1400563699833124,
+  "seeds": [
+    73771,
+    285547,
+    237880,
+    369896,
+    30991,
+    99139,
+    333836,
+    269216,
+    179958,
+    429075
+  ],
+  "wall_seconds": 989.9
+}

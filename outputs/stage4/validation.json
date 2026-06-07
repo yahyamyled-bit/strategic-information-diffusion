@@ -1,0 +1,60 @@
+{
+  "n_sim_runs": 100,
+  "operating_point": {
+    "alpha": 0.3,
+    "beta": 0.8,
+    "gamma": 0.36
+  },
+  "sim_spread_frac_median": 0.1547754617564484,
+  "comparisons": {
+    "gossipcop": {
+      "depth": {
+        "ks_stat": 0.9952415812591509,
+        "p_value": 2.5948167809640552e-170,
+        "pass": false,
+        "sim_median": 8.0,
+        "real_median": 2.0
+      },
+      "breadth_frac": {
+        "ks_stat": 0.7051244509516837,
+        "p_value": 2.0465385382642978e-48,
+        "pass": false,
+        "sim_median": 0.5454170983757961,
+        "real_median": 0.7260991353062964
+      },
+      "structural_virality": {
+        "ks_stat": 0.9985358711566618,
+        "p_value": 3.1076667920906636e-180,
+        "pass": false,
+        "sim_median": 5.006498041913957,
+        "real_median": 2.1622645896303183
+      }
+    },
+    "twitter": {
+      "depth": {
+        "ks_stat": 1.0,
+        "p_value": 2.1130905024092147e-179,
+        "pass": false,
+        "sim_median": 8.0,
+        "real_median": 3.0
+      },
+      "breadth_frac": {
+        "ks_stat": 0.8634177215189873,
+        "p_value": 3.0754192731428126e-81,
+        "pass": false,
+        "sim_median": 0.5454170983757961,
+        "real_median": 0.8205128205128205
+      },
+      "structural_virality": {
+        "ks_stat": 1.0,
+        "p_value": 2.1130905024092147e-179,
+        "pass": false,
+        "sim_median": 5.006498041913957,
+        "real_median": 1.9938461538461536
+      }
+    }
+  },
+  "overall_pass": false,
+  "discrepancy_note": "Depth and structural virality of simulated cascades exceed those of real single-article retweet trees (a multi-hop follower-graph contagion vs broadcast-tree model-class gap, robust to recovery rate). Reported as a stated limitation per chapter sec 2.6; reach is calibrated and realistic.",
+  "wall_seconds": 1979.1
+}

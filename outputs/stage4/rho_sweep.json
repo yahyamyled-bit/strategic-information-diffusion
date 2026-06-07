@@ -1,0 +1,39 @@
+{
+  "n_runs": 100,
+  "operating_point": {
+    "alpha": 0.3,
+    "beta": 0.8,
+    "gamma": 0.36
+  },
+  "seed_regime": "random",
+  "by_rho": {
+    "0.10": {
+      "median": {
+        "depth": 8.0,
+        "breadth_frac": 0.5454170983757961,
+        "structural_virality": 5.006498041913957,
+        "spread_frac": 0.1547754617564484
+      },
+      "n": 100
+    },
+    "0.20": {
+      "median": {
+        "depth": 8.0,
+        "breadth_frac": 0.5498395625811061,
+        "structural_virality": 4.9967751345084395,
+        "spread_frac": 0.14879573217469
+      },
+      "n": 100
+    },
+    "0.40": {
+      "median": {
+        "depth": 8.0,
+        "breadth_frac": 0.5535612774211194,
+        "structural_virality": 5.015366345518291,
+        "spread_frac": 0.14145164751897615
+      },
+      "n": 100
+    }
+  },
+  "wall_seconds": 3142.3
+}

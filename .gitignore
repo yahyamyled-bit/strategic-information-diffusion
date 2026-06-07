@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+data/raw/
+data/processed/*
+!data/processed/higgs_adjacency.npz
+!data/processed/higgs_node_arrays.npz
+!data/processed/higgs_communities.npy
+desktop.ini
+Thumbs.db
+.vscode/
+.idea/

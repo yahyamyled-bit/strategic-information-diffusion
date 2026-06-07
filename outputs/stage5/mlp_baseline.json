@@ -1,0 +1,24 @@
+{
+  "task": "MLP baseline for s(v) prediction (no message passing)",
+  "corpus": "politifact",
+  "fake_only": true,
+  "features": [
+    "degree",
+    "betweenness",
+    "eigenvector",
+    "neighbor_degree_avg",
+    "depth_from_source"
+  ],
+  "n_train_nodes": 2382,
+  "n_val_nodes": 2539,
+  "n_test_nodes": 18091,
+  "hidden": 64,
+  "best_val_mse": 0.0006320514949038625,
+  "test_mse": 0.0005127281183376908,
+  "mlp_test_spearman": 0.4025531801306749,
+  "raw_baseline_test_spearman": {
+    "degree": 0.9964198468687467,
+    "betweenness": 0.9991934466887791
+  },
+  "wall_seconds": 15.1
+}

@@ -1,0 +1,18 @@
+# Version-pinned to the environment used for this thesis (Python 3.12).
+# Stages 1-4 need only the scientific-Python core; Stages 5-6 add PyTorch
+# Geometric and Louvain. Install the second block when reaching Stage 5.
+
+# --- Core (Stages 1-4) ---
+networkx==3.6.1
+numpy==2.4.2
+pandas==3.0.0
+scipy==1.17.1
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- GNN + community detection (installed; needed from Stage 3 onward: UPFD
+#     loading for calibration, GNN training, Louvain for edge rewiring) ---
+torch==2.5.1
+torch-geometric==2.6.1
+python-louvain==0.16
+# python-igraph==0.11.6   # optional: C-backed fallback for large-graph ops (not installed)
